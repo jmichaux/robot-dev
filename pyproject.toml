@@ -1,0 +1,44 @@
+[project]
+name = "robot-dev"
+version = "0.1.0"
+description = "Minimal robotics policy learning: ACT → smolVLA"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1",
+    "torchvision>=0.16",
+    "gymnasium>=0.29",
+    "mujoco>=3.0",
+    "dm_control>=1.0",
+    "h5py>=3.10",
+    "numpy>=1.24",
+    "wandb>=0.16",
+    "huggingface_hub>=0.20",
+    "transformers>=4.36",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1",
+    "ipython",
+    "jupyter",
+    "matplotlib",
+    "black",
+    "pylint",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.setuptools]
+packages=["robot_dev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
