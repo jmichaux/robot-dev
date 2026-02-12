@@ -10,6 +10,8 @@ build/
 .venv/
 venv/
 env/
+rd-venv/
+rd-venv0/
 
 # IDE
 .vscode/
