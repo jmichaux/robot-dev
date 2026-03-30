@@ -1,0 +1,5 @@
+## Setup
+```bash
+bash setup.sh        # CPU
+bash setup.sh --gpu  # GPU (CUDA 12.1 — change cu121 in setup.sh to match your driver)
+```
