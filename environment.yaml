@@ -1,17 +1,17 @@
 name: robot-dev
 channels:
-  - pytorch
-  - nvidia
   - conda-forge
   - defaults
 dependencies:
   - python=3.10
-  - pytorch
-  - torchvision
-  - pytorch-cuda=12.1  # change to match your driver
   - pip
   - pip:
     - gymnasium-robotics
+    - gym-aloha
+    - wandb
+    - ipython
+    - numpy
+    - matplotlib
     - gym-aloha
     - wandb
     - ipython
